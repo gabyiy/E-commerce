@@ -117,7 +117,7 @@ return
         {/* aici facem un link pentru new customer si o sa il redirictionam spre register */}
         <div className="mb-3">
         Already have an account?{' '}
-          <Link to={`/signin?redirect=${redirect}`}>Sign-In</Link>
+          <Link to={`/signin?redirect=${redirect}`}>Sign In</Link>
         </div>
       </Form>
     </Container>
