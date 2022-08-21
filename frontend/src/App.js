@@ -54,7 +54,7 @@ const {state, dispatch: ctxDispatch}=useContext(Store)
         <Navbar bg="dark" variant="dark">
           <Container>
             <LinkContainer to="/">
-              <Navbar.Brand>amazona</Navbar.Brand>
+              <Navbar.Brand>E-commerce</Navbar.Brand>
             </LinkContainer>
             {/* acest nav il utilizam ca sa vedem cate produse adaugam in cart  */}
             <Nav className="me-auto">
