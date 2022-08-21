@@ -21,6 +21,8 @@ import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
 import OrderHistoryScreen from './screens/OrderHistoryScreen';
 import ProfileScreen from './screens/ProfileScreen';
+//Pentru a uploada la heroku trebuie scoase toate repositoarele de git din client si server si facut doar unu in folderu unde avem aplicatia
+
 
 // pentru a schimba erroarea de la login importam npm i --force react-toastify
 
