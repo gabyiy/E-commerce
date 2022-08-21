@@ -66,7 +66,7 @@ const HomeScreen = () => {
     <div>
       {/* aici folosim iar helet si spunem cand suntem la pagina home sa ne arate numele paginei */}
       <Helmet>
-        <title>Amazona</title>
+        <title>E-commerce</title>
       </Helmet>
       <h1>Featured Products</h1>
       <div className="products">
