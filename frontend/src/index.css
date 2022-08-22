@@ -7,59 +7,82 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-.site-container{
+.site-container {
   min-height: 100vh;
 }
 
-main{
+main {
   flex: 1;
 }
-.btn-primary{
+.btn-primary {
   background-color: #ffc040;
   color: #000000;
 }
-.products{
+.products {
   display: flex;
   /* aici folosim wrap ca atunci cand micsoram ecranu divurile cu imaginea sa coboare una sub alta */
   flex-wrap: wrap;
   justify-content: center;
 }
 .rating span {
-  color: #ffc000
+  color: #ffc000;
 }
 
-.product{
+.product {
   border: 1px #404040 solid;
   /* asa creem spatiun intre iteme */
   margin: 1rem;
 }
-.product img{
+.product img {
   width: 100%;
-max-width: 400px;
+  max-width: 400px;
 }
 
-
-
-.product-info{
-padding: 1rem;
+.product-info {
+  padding: 1rem;
 }
 
-.img-large{
+.img-large {
   max-width: 100%;
 }
-.img-thumbnail{
+.img-thumbnail {
   height: 80px;
 }
-.small-container{
+.small-container {
   max-width: 600px;
 }
 
-.checkout-steps>{
+.checkout-steps > div {
   border-bottom: 0.2rem solid #a0a0a0;
   color: #a0a0a0;
 }
-.checkout-steps> div.active{
+.checkout-steps > div.active {
   border-bottom: 0.2rem solid #f08000;
   color: #f08000;
+}
+
+/* sidebar */
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.side-navbar {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  /* asa o sa fie hiden pe default cu -300px */
+  left: -300px;
+  background-color: #100901;
+  transition: 0.5s;
+}
+.site-container {
+  transition: 0.4s;
+}
+
+.active-cont {
+  margin-left: 240px;
+}
+.active-nav {
+  left: 0;
 }
