@@ -25,6 +25,7 @@ import Button from 'react-bootstrap/esm/Button';
 import { getError } from './utils';
 import axios from 'axios';
 import SearchBox from './components/SearchBox';
+import SearchScree from './screens/SearchScree';
 //Pentru a uploada la heroku trebuie scoase toate repositoarele de git din client si server si facut doar unu in folderu unde avem aplicatia
 
 // pentru a schimba erroarea de la login importam npm i --force react-toastify
@@ -165,7 +166,7 @@ function App() {
               {/* fiecare ruta trebuie sa aibe un path gen / care este home , si element ce pagina vrem sa vedem*/}
               {/* iar aici am definit o ruta care o sa ne arate o descriptie a fiefcarui produs
       iar la element o sa avem pagina care o sa ne arate produsu ala de forma dinamica
-      asta este page ref cu :slug(referinta asta o vom utiliza in ProductScreen) */}
+      asta este page ref cu :slug(referinta asta o vom utiliza in ProductScree) */}
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/" element={<HomeScreen />} />
@@ -177,6 +178,7 @@ function App() {
               <Route path="/order/:id" element={<OrderScreen />} />
               <Route path="/orderhistory" element={<OrderHistoryScreen />} />
               <Route path="/profile" element={<ProfileScreen />} />
+              <Route path='search' element={<SearchScree/>}/>
             </Routes>
           </Container>
         </main>
